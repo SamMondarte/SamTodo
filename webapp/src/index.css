@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'fantasy','Segoe UI', 'Helvetica Neue',
+   'serif', 'Franklin Gothic Medium', 'BlinkMacSystemFont';
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    purple 0%,
+    plum 0%,
+  );
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #512841;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: lavender;
+  font: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #BF88DA;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: mintcream;
+
+}
+.todo-input::placeholder {
+  color: rgb(255, 185, 255);
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    #7FACD6 0%, 
+    #50409A 0%
+  );
+  color: snow;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #C36B85;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position:relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: oldlace;
+  background: linear-gradient(
+    90deg,
+    #FDFD97 0%,
+    gold 100%
+  );
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    #7fd6a6 0%, 
+    #409a69 100%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    #d67f7f 0%, 
+    #ac1313 100%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    #7fd6d6 0%, 
+    #1355ac 100%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: aliceblue;
+}
+
+.edit-icon {
+  color: azure;
+}
